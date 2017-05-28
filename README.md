@@ -1,6 +1,6 @@
 # fotoabild-ios
 
-# Structure
+# Project Structure
 - Controller - All controllers
 - View - All views
 - Model - All data models
