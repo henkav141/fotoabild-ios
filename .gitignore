@@ -1,4 +1,6 @@
 .DS_Store
 build
+*FotoABild/FotoABild.xcodeproj/*
 *.xcodeproj/*
+!*FotoABild/FotoABild.xcodeproj/project.pbxproj
 !*.xcodeproj/project.pbxproj
