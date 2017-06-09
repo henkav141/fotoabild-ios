@@ -13,12 +13,13 @@ class MainNavigationViewController: UINavigationController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let image = UIImage(named: "Simple logo")
+        let image: UIImage? = UIImage(named: "Simple logo")
         let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 40, height: 40))
         imageView.image = image
         imageView.contentMode = .scaleAspectFit
         
-  
+        navigationItem.titleView = imageView
+        
         // Do any additional setup after loading the view.
     }
 
@@ -27,6 +28,7 @@ class MainNavigationViewController: UINavigationController {
         // Dispose of any resources that can be recreated.
     }
     
+   
 
     /*
     // MARK: - Navigation

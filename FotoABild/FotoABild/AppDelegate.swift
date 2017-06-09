@@ -12,10 +12,27 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    
+   
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        if let window = window {
+            
+            
+            let image: UIImage? = UIImage(named: "Simple logo")
+            let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 40, height: 40))
+            imageView.image = image
+            imageView.contentMode = .scaleAspectFit
+            
+            
+            let navController = window.rootViewController as! UINavigationController
+            navController.navigationBar.topItem?.titleView = imageView
+            navController.navigationBar.barTintColor = AppColors.BLUE_DARK.uiColor
+        }
+
+        
         return true
     }
 
