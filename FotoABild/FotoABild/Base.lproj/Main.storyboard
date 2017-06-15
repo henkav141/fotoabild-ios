@@ -17,13 +17,30 @@
                     <view key="view" contentMode="scaleToFill" id="Ery-Cz-Xyg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sst-n2-QfP">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="OuY-rk-7kp"/>
+                                    <constraint firstAttribute="width" constant="150" id="xRY-rg-e2N"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Sst-n2-QfP" firstAttribute="centerX" secondItem="Ery-Cz-Xyg" secondAttribute="centerX" id="CJW-Y6-W2D"/>
+                            <constraint firstItem="Sst-n2-QfP" firstAttribute="centerY" secondItem="Ery-Cz-Xyg" secondAttribute="centerY" id="O2T-1K-1u6"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="owI-LU-jzD"/>
+                    <connections>
+                        <outlet property="orderButton" destination="Sst-n2-QfP" id="pT8-0J-aTR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PQc-W1-ejY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1196" y="124"/>
+            <point key="canvasLocation" x="1196" y="123.68815592203899"/>
         </scene>
         <!--Main Navigation View Controller-->
         <scene sceneID="LUG-Xx-8U0">

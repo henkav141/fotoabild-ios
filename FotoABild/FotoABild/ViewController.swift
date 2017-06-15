@@ -10,34 +10,34 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var orderButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-   
+        
+        setupButton();
+        
+        
     }
     
-
-//    override func viewDidAppear(_ animated: Bool) {
-//        // 1
-//        let nav = self.navigationController?.navigationBar
-//        
-//        // 2
-//        nav?.barStyle = UIBarStyle.black
-//        nav?.tintColor = UIColor.yellow
-//        
-//        // 3
-//        let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 40, height: 40))
-//        imageView.contentMode = .scaleAspectFit
-//        
-//        // 4
-//        let image = UIImage(named: "Simple logo")
-//        imageView.image = image
-//        
-//        // 5
-//        navigationItem.titleView = imageView
-//    }
-
-
+    private func setupButton(){
+        orderButton.frame.size = CGSize(width: 150, height: 150)
+        orderButton.backgroundColor = AppColors.YELLOW_DARK.uiColor
+        orderButton.layer.cornerRadius = 30
+        orderButton.layer.shadowOffset = CGSize(width: 1, height: 1)
+        orderButton.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha:1).cgColor
+        orderButton.layer.shadowOpacity = 0.5
+        
+        orderButton.setTitle("", for: .normal)
+       
+        
+        let logo = UIImage(named: "Simple logo")
+        orderButton.setImage(logo, for: .normal)
+        orderButton.imageView!.frame.size = CGSize(width: 100, height: 100)
+    
+        orderButton.imageView!.contentMode = .scaleAspectFit
+    }
+    
 
 }
 
