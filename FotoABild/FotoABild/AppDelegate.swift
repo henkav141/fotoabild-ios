@@ -20,7 +20,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         if let window = window {
             
-            
             let image: UIImage? = UIImage(named: "Simple logo")
             let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 40, height: 40))
             imageView.image = image
