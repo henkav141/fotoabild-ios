@@ -1,5 +1,5 @@
 //
-//  AddImagesViewController.swift
+//  UIViewControllerWithLogo.swift
 //  FotoABild
 //
 //  Created by Johan Wiström on 2017-07-01.
@@ -8,10 +8,17 @@
 
 import UIKit
 
-class AddImagesViewController: UIViewControllerWithLogo {
+class UIViewControllerWithLogo: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let image: UIImage? = UIImage(named: "Simple logo")
+        let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 40, height: 40))
+        imageView.image = image
+        imageView.contentMode = .scaleAspectFit
+        
+        navigationItem.titleView = imageView
     }
 
     

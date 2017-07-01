@@ -26,9 +26,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             imageView.contentMode = .scaleAspectFit
             
             
-            let navController = window.rootViewController as! UINavigationController
-            navController.navigationBar.topItem?.titleView = imageView
-            navController.navigationBar.barTintColor = AppColors.BLUE_DARK.uiColor
+              let navController = window.rootViewController as! UINavigationController
+//            navController.navigationBar.topItem?.titleView = imageView
+              navController.navigationBar.barTintColor = AppColors.BLUE_DARK.uiColor
         }
 
         

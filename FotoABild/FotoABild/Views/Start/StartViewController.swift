@@ -8,12 +8,14 @@
 
 import UIKit
 
-class StartViewController: UIViewController {
+class StartViewController: UIViewControllerWithLogo {
 
     @IBOutlet weak var orderButton: UIButton!
     
     @IBAction func onOrderClick(_ sender: UIButton) {
         print("Heeelllo!")
+        
+        
     }
     
     override func viewDidLoad() {
