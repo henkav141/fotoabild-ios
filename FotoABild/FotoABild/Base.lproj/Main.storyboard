@@ -18,13 +18,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sst-n2-QfP">
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sst-n2-QfP" customClass="OrderButton" customModule="FotoABild" customModuleProvider="target">
                                 <constraints>
                                     <constraint firstAttribute="height" constant="150" id="OuY-rk-7kp"/>
                                     <constraint firstAttribute="width" constant="150" id="xRY-rg-e2N"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Button" image="Simple logo"/>
+                                <connections>
+                                    <action selector="onOrderClick:" destination="TkL-7Q-0v7" eventType="touchUpInside" id="cuE-71-4B4"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -65,4 +67,7 @@
             <point key="canvasLocation" x="383" y="124"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Simple logo" width="396" height="438"/>
+    </resources>
 </document>

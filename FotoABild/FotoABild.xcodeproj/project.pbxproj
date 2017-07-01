@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B53D3D681F0801F3006A44F8 /* OrderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53D3D671F0801F3006A44F8 /* OrderButton.swift */; };
+		B53D3D6C1F08075A006A44F8 /* ColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53D3D6B1F08075A006A44F8 /* ColorExtensions.swift */; };
 		B59CC6BC1EE9AB97006D17E2 /* MainNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59CC6BB1EE9AB97006D17E2 /* MainNavigationViewController.swift */; };
 		B5E60EE21ED96D7500B17AE1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E60EE11ED96D7500B17AE1 /* AppDelegate.swift */; };
 		B5E60EE41ED96D7500B17AE1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E60EE31ED96D7500B17AE1 /* ViewController.swift */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B53D3D671F0801F3006A44F8 /* OrderButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderButton.swift; sourceTree = "<group>"; };
+		B53D3D6B1F08075A006A44F8 /* ColorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorExtensions.swift; sourceTree = "<group>"; };
 		B59CC6BB1EE9AB97006D17E2 /* MainNavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainNavigationViewController.swift; path = ../MainNavigationViewController.swift; sourceTree = "<group>"; };
 		B5E60EDE1ED96D7500B17AE1 /* FotoABild.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FotoABild.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5E60EE11ED96D7500B17AE1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +43,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B53D3D6A1F080708006A44F8 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				B53D3D6B1F08075A006A44F8 /* ColorExtensions.swift */,
+			);
+			name = Extension;
+			path = "/Users/johanwistrom/Source/iOS/fotoabild-ios/FotoABild/FotoABild/Extensions";
+			sourceTree = "<absolute>";
+		};
 		B5E60ED51ED96D7500B17AE1 = {
 			isa = PBXGroup;
 			children = (
@@ -58,10 +71,12 @@
 		B5E60EE01ED96D7500B17AE1 /* FotoABild */ = {
 			isa = PBXGroup;
 			children = (
+				B53D3D6A1F080708006A44F8 /* Extension */,
 				B5E60EFD1EDAB30700B17AE1 /* Helper */,
 				B5E60EE11ED96D7500B17AE1 /* AppDelegate.swift */,
 				B59CC6BB1EE9AB97006D17E2 /* MainNavigationViewController.swift */,
 				B5E60EE31ED96D7500B17AE1 /* ViewController.swift */,
+				B53D3D671F0801F3006A44F8 /* OrderButton.swift */,
 				B5E60EE51ED96D7500B17AE1 /* Main.storyboard */,
 				B5E60EE81ED96D7500B17AE1 /* Assets.xcassets */,
 				B5E60EEA1ED96D7500B17AE1 /* LaunchScreen.storyboard */,
@@ -153,7 +168,9 @@
 				B5E60EE41ED96D7500B17AE1 /* ViewController.swift in Sources */,
 				B5E60EFF1EDAB33100B17AE1 /* AppColors.swift in Sources */,
 				B5E60EE21ED96D7500B17AE1 /* AppDelegate.swift in Sources */,
+				B53D3D681F0801F3006A44F8 /* OrderButton.swift in Sources */,
 				B59CC6BC1EE9AB97006D17E2 /* MainNavigationViewController.swift in Sources */,
+				B53D3D6C1F08075A006A44F8 /* ColorExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

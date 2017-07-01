@@ -12,12 +12,13 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var orderButton: UIButton!
     
+    @IBAction func onOrderClick(_ sender: UIButton) {
+        print("Heeelllo!")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        setupButton();
-        
-        
+        //setupButton()
     }
     
     private func setupButton(){
@@ -29,13 +30,10 @@ class ViewController: UIViewController {
         orderButton.layer.shadowOpacity = 0.5
         
         orderButton.setTitle("", for: .normal)
-       
-        
-        let logo = UIImage(named: "Simple logo")
-        orderButton.setImage(logo, for: .normal)
-        orderButton.imageView!.frame.size = CGSize(width: 100, height: 100)
     
-        orderButton.imageView!.contentMode = .scaleAspectFit
+        orderButton.imageEdgeInsets = UIEdgeInsetsMake(25, 25, 25, 25)
+        
+        
     }
     
 
