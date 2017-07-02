@@ -20,6 +20,21 @@ class StartViewController: UIViewControllerWithLogo {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+    }
+    
+    override func viewDidLayoutSubviews() {
+        
+        let gradient = CAGradientLayer()
+        gradient.startPoint = CGPoint(x: 0, y: 0)
+        gradient.endPoint = CGPoint(x: 1, y: 1)
+        gradient.locations = [0, 0.3, 1]
+        
+        gradient.frame = view.bounds
+        gradient.colors = [AppColors.WHITE.uiColor.cgColor,
+                           AppColors.WHITE.uiColor.cgColor,
+                           AppColors.YELLOW_DARK.uiColor.cgColor]
+        view.layer.insertSublayer(gradient, at: 0)
     }
  
     
