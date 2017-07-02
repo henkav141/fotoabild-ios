@@ -9,9 +9,16 @@
 import UIKit
 
 class AddImagesViewController: UIViewControllerWithLogo {
+    @IBOutlet weak var imagesContainerView: UIView!
+    
+    var imagesController: ImagesCollectionViewController!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+//        imagesController = childViewControllers.first as! ImagesCollectionViewController
+//        
+//        imagesController.sayHello()
     }
 
     
