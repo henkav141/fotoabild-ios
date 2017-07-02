@@ -66,7 +66,7 @@
         <!--Main Navigation View Controller-->
         <scene sceneID="LUG-Xx-8U0">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7mp-ZC-cfQ" customClass="MainNavigationViewController" customModule="FotoABild" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" toolbarHidden="NO" id="7mp-ZC-cfQ" customClass="MainNavigationViewController" customModule="FotoABild" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ml1-bE-Zhg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>

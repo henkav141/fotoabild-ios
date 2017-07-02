@@ -10,6 +10,8 @@ import UIKit
 
 class UIViewControllerWithLogo: UIViewController {
 
+    var displayGradientBackground = true
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -19,7 +21,35 @@ class UIViewControllerWithLogo: UIViewController {
         imageView.contentMode = .scaleAspectFit
         
         navigationItem.titleView = imageView
+    
+        navigationController?.toolbar.barTintColor = AppColors.BLUE_DARK.uiColor
+        navigationController?.navigationBar.barTintColor = AppColors.BLUE_DARK.uiColor
+        
+        navigationController?.navigationBar.tintColor = AppColors.YELLOW_LIGHT.uiColor
+        
     }
+    
+    override func viewDidLayoutSubviews() {
+        if (displayGradientBackground){
+            doDisplayGradientBackground()
+        }
+    }
+    
+    private func doDisplayGradientBackground(){
+        let gradient = CAGradientLayer()
+        gradient.startPoint = CGPoint(x: 0, y: 0)
+        gradient.endPoint = CGPoint(x: 1, y: 1)
+        gradient.locations = [0, 0.3, 1]
+        
+        gradient.frame = view.bounds
+        gradient.colors = [AppColors.WHITE.uiColor.cgColor,
+                           AppColors.WHITE.uiColor.cgColor,
+                           AppColors.YELLOW_DARK.uiColor.cgColor]
+        view.layer.insertSublayer(gradient, at: 0)
+    }
+    
+    
+    
 
     
 
